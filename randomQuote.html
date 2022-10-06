@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+    <style>
+        body {
+            background-image: url("https://images.unsplash.com/photo-1490237251747-4557595144b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1773&q=80");
+            justify-content: center;
+        }
+        .heading{
+            margin: 1em 0 0.5em 0;
+	        color: #343434;
+	        font-weight: normal;
+	        font-family: 'Ultra', sans-serif;   
+	        font-size: 36px;
+	        line-height: 42px;
+	        text-transform: uppercase;
+	        text-shadow: 0 2px white, 0 3px #777;
+        }
+        .div{
+            justify-content: center;
+            text-align: center;
+            width: 15em;
+            border: 1px solid #333;
+            box-shadow: 8px 8px 5px #444;
+            padding: 8px 12px;
+            background-image: linear-gradient(to right, #434343 0%, black 100%);
+
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading">
+        Quote Generator!!!
+    </h1>
+    <div class="div">
+        <div id="Quote_id" style="color:aliceblue">
+            The best way out is always through
+        </div>
+        <br>
+        <button onclick="Quotegenerat()">New Quote</button>
+    
+    </div>
+    
+    <script>
+        let x=[
+            'You can get everything in life you want if you will just help enough other people get what they want',
+            'Inspiration does exist, but it must find you working',
+            'Dont settle for average. Bring your best to the moment. Then, whether it fails or succeeds, at least you know you gave all you had',
+            'Show up, show up, show up, and after a while the muse shows up, too',
+            'Dont bunt. Aim out of the ballpark. Aim for the company of immortals'
+        ]
+        let temp = 0;
+        function Quotegenerat(){
+            if(temp>4)
+            {
+                temp = 0;
+            }
+            document.getElementById('Quote_id').innerHTML=x[temp];
+            temp++;
+            
+        }
+
+
+    </script>
+</body>
+</html>
