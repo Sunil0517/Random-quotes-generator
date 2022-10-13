@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,17 +11,19 @@
             background-image: url("https://images.unsplash.com/photo-1490237251747-4557595144b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1773&q=80");
             justify-content: center;
         }
-        .heading{
+
+        .heading {
             margin: 1em 0 0.5em 0;
-	        color:gold;
-	        font-weight:bold;
-	        font-family:Verdana, Geneva, Tahoma, sans-serif;  
-	        font-size: 36px;
-	        line-height: 42px;
-	        text-transform: uppercase;
-	        text-shadow: 0 2px white, 0 3px #777;
+            color: gold;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 36px;
+            line-height: 42px;
+            text-transform: uppercase;
+            text-shadow: 0 2px white, 0 3px #777;
         }
-        .div{
+
+        .div {
             justify-content: center;
             text-align: center;
             width: 15em;
@@ -34,16 +37,18 @@
             padding: 10px;
 
         }
-        button{
+
+        button {
             border-radius: 5px;
-            background-color:indianred;
+            background-color: indianred;
         }
 
-        button:hover{
+        button:hover {
             background-color: blueviolet;
         }
     </style>
 </head>
+
 <body>
     <h2 class="heading">
         Quote Generator!!!
@@ -54,34 +59,35 @@
         </div>
         <br>
         <button onclick="Quotegenerate()">New Quote</button>
-    
+
     </div>
-    
+
     <script>
-        let x=[
+        let x = [
             'You can get everything in life you want if you will just help enough other people get what they want',
             'Inspiration does exist, but it must find you working',
             'Dont settle for average. Bring your best to the moment. Then, whether it fails or succeeds, at least you know you gave all you had',
             'Show up, show up, show up, and after a while the muse shows up, too',
             'Dont bunt. Aim out of the ballpark. Aim for the company of immortals',
-	        'Your Knowledge is your key to the future.',
+            'Your Knowledge is your key to the future.',
             'Dont tell people your plans. Show them your results.',
             'When nothing goes right, go left.',
             'Success is not final; failure is not fatal: It is the courage to continue that counts.',
-	    'STAY HUNGRY STAY FOOLISH.'
+            'STAY HUNGRY STAY FOOLISH.',
+            'Cofidence is the fisrt step towards success'
         ]
         let temp = 0;
-        function Quotegenerate(){
-            if(temp>7)
-            {
+        function Quotegenerate() {
+            if (temp > 7) {
                 temp = 0;
             }
-            document.getElementById('Quote_id').innerHTML=x[temp];
+            document.getElementById('Quote_id').innerHTML = x[temp];
             temp++;
-            
+
         }
 
 
     </script>
 </body>
+
 </html>
